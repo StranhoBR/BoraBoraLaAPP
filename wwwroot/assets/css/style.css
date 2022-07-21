@@ -1,0 +1,323 @@
+﻿.service-info-bx {
+    margin-top: 50px;
+}
+
+.service-bx {
+    box-shadow: 0 0 25px 0 rgba(29,25,0,0.25);
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    position: relative;
+    background-color: #fff;
+}
+
+    .service-bx [class*="feature-"] {
+        box-shadow: 0 0 25px 0 rgba(29,25,0,0.15);
+        margin-top: -30px;
+        position: relative;
+        top: -40px;
+        margin-bottom: -20px;
+    }
+
+    .service-bx .info-bx {
+        padding: 30px;
+    }
+
+    .service-bx:hover {
+        transform: translateY(-15px);
+        -moz-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -o-transform: translateY(-15px);
+    }
+
+@media only screen and (max-width: 1200px) {
+    .cours-more-info .review {
+        padding: 8px 12px;
+    }
+
+    .service-info-bx .action-box {
+        margin-top: 40px;
+    }
+
+    .account-head {
+        width: 350px;
+        min-width: 350px;
+    }
+
+    .service-bx h4 {
+        font-size: 20px;
+    }
+
+    .rev-btn {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .pricingtable-bx {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .event-time .event-date {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .event-month {
+        font-size: 12px;
+    }
+
+    .event-time {
+        padding: 10px 8px;
+    }
+
+    .event-bx .info-bx {
+        padding: 20px;
+    }
+
+    .event-info .event-title {
+        font-size: 20px;
+    }
+
+    .upcoming-event-carousel.owl-btn-1 .owl-prev,
+    .upcoming-event-carousel.owl-btn-1 .owl-next {
+        margin: 0 50px !important;
+    }
+
+    .service-info-bx {
+        margin-top: 0px;
+        padding-top: 80px;
+    }
+
+    .service-bx .info-bx {
+        padding: 10px 10px 20px 10px;
+    }
+
+        .service-bx .info-bx h4 {
+            font-size: 16px;
+        }
+
+    .service-bx .feature-box-sm {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        top: -30px;
+    }
+
+        .service-bx .feature-box-sm i {
+            font-size: 20px;
+        }
+
+    .our-story::after {
+        content: unset;
+    }
+
+    .bar-bx .side {
+        width: 20%;
+    }
+
+    .service-info-bx .action-box {
+        margin-top: 0;
+    }
+
+    .account-head {
+        width: 100%;
+        min-width: 100%;
+        height: 200px;
+    }
+
+    .account-form {
+        display: block;
+    }
+
+    .account-container {
+        padding: 50px 20px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .courses-carousel .owl-nav {
+        position: unset;
+        top: auto;
+        right: auto;
+        bottom: 0;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .section-sp1 {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .section-sp2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .upcoming-event-carousel.owl-btn-1 .owl-prev,
+    .upcoming-event-carousel.owl-btn-1 .owl-next {
+        margin: 0 0 !important;
+    }
+
+    .testimonial-carousel .owl-nav,
+    .recent-news-carousel .owl-nav {
+        position: unset;
+        top: auto;
+        right: auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .testimonial-carousel .owl-nav {
+        margin-top: 30px;
+    }
+
+    .info-bx {
+        font-size: 16px;
+    }
+
+    .upcoming-event-carousel.owl-btn-1 .owl-prev,
+    .upcoming-event-carousel.owl-btn-1 .owl-next {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+        position: unset;
+        box-shadow: none;
+        margin: 0 5px !important;
+        transform: translateY(0);
+        -o-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+
+    .upcoming-event-carousel.owl-btn-center-lr .owl-nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .online-cours h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .online-cours h5 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .cours-search {
+        margin-bottom: 30px;
+    }
+
+    .service-info-bx {
+        padding-top: 50px;
+    }
+
+    .service-bx {
+        margin-bottom: 30px;
+    }
+
+        .service-bx.m-b0 {
+            margin-bottom: 0;
+        }
+
+    .event-time {
+        margin-right: 0;
+        border-radius: 0;
+        position: absolute;
+        top: -68px;
+        left: 0;
+    }
+
+    .rev-btn {
+        padding: 10px 10px !important;
+        font-size: 12px !important;
+    }
+
+    Rev Slide
+    .rev-slider .tp-rightarrow,
+    .rev-slider .tp-leftarrow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer-title {
+        font-size: 14px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+    }
+
+    footer p,
+    footer li {
+        font-size: 13px;
+    }
+
+    footer .widget {
+        margin-bottom: 24px;
+    }
+
+    .footer-top {
+        padding: 0 0 10px;
+    }
+
+    .pt-exebar {
+        margin-bottom: 30px;
+    }
+
+    .pt-logo img {
+        width: 150px;
+    }
+
+    .pt-social-link {
+        display: none !important;
+    }
+
+    .all-review,
+    .bar-bx .side {
+        width: 60%;
+    }
+
+    .rev-btn {
+        padding: 10px 15px !important;
+    }
+
+    .counter-style-1 span,
+    .counter-style-1 .counter {
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .counter-style-1 .counter-text {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .profile-head {
+        padding: 10px 15px 10px 15px;
+    }
+
+    .edit-profile {
+        padding: 15px;
+    }
+
+    .courses-filter {
+        padding: 15px 15px 0 15px;
+    }
+
+    .online-cours h5 {
+        font-size: 14px;
+    }
+
+    .online-cours h2 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+}
