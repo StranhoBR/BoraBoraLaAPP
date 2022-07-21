@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
+      "projectUniqueName": "I:\\MeusProjetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
       "projectName": "BoraBoraLa",
-      "projectPath": "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
+      "projectPath": "I:\\MeusProjetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
       "packagesPath": "C:\\Users\\Ander\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\BoraBoraLaAPP\\obj\\",
+      "outputPath": "I:\\MeusProjetos\\BoraBoraLaAPP\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
