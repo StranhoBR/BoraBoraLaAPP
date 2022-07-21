@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\MeusProjetos\\BoraBoraLa\\BoraBoraLa.csproj": {}
+    "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj": {}
   },
   "projects": {
-    "E:\\MeusProjetos\\BoraBoraLa\\BoraBoraLa.csproj": {
+    "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\MeusProjetos\\BoraBoraLa\\BoraBoraLa.csproj",
+        "projectUniqueName": "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
         "projectName": "BoraBoraLa",
-        "projectPath": "E:\\MeusProjetos\\BoraBoraLa\\BoraBoraLa.csproj",
+        "projectPath": "D:\\Projetos\\BoraBoraLaAPP\\BoraBoraLa.csproj",
         "packagesPath": "C:\\Users\\Ander\\.nuget\\packages\\",
-        "outputPath": "E:\\MeusProjetos\\BoraBoraLa\\obj\\",
+        "outputPath": "D:\\Projetos\\BoraBoraLaAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
