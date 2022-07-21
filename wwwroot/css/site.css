@@ -1,34 +1,389 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    width: 140px;
+}
+
+.menu ul {
+    padding: 0px;
+    margin: 0px;
+    background-color: #EDEDED;
+    list-style: none;
+}
+
+    .menu ul li {
+        display: inline;
+    }
+
+.logo {
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
 }
 
-.menu {
-    gap: 1rem;
-    justify-content: flex-end;
-    margin-right: 3rem;
-}
-
-.navbar-top {
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    text-decoration: none;
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     white-space: nowrap;
-    color: rgb(255, 255, 255);
+    line-height: 60px; /* Vertically center the text there */
 }
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.left.carousel-control,
+.right.carousel-control {
+    background-image: none;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.img-produto-carrossel {
+    width: 75%;
+}
+
+.img-produto-carrinho {
+    height: 120px;
+    filter: drop-shadow(2px 2px 2px #ccc);
+}
+
+.linha-produto {
+    margin: 20px;
+}
+
+.produto-nome {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.produto-footer {
+    max-height: 140px;
+}
+
+.produto-nome {
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.glyphicon.glyphicon-chevron-left,
+.glyphicon.glyphicon-chevron-right {
+    color: #000;
+    margin-right: -120px;
+    margin-left: -120px;
+}
+
+.text-limit-3 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+.navbar {
+    background-color: #484848;
+}
+
+    .navbar .navbar-nav .nav-link {
+        color: #fff;
+    }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #ffb822;
+        }
+
+    .navbar .navbar-nav .active > .nav-link {
+        color: #ffb822;
+    }
+
+footer a.text-light:hover {
+    color: #fed136 !important;
+    text-decoration: none;
+}
+
+footer .cizgi {
+    border-right: 1px solid #535e67;
+}
+
+@media (max-width: 992px) {
+    footer .cizgi {
+        border-right: none;
+    }
+}
+
+
+.alignLeft {
+    justify-content: left;
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.panel-info {
+    border-color: #999;
+}
+
+.panel-heading {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+
+.panel {
+    border-radius: 1px;
+}
+
+.panel-info > .panel-heading {
+    color: #eee;
+    border-color: #999;
+}
+
+.thankyou-page ._header {
+    background: #ccc;
+    padding: 100px 30px;
+    text-align: center;
+    background: #ccc url(https://codexcourier.com/images/main_page.jpg) center/cover no-repeat;
+}
+
+    .thankyou-page ._header .logo {
+        max-width: 200px;
+        margin: 0 auto 50px;
+    }
+
+        .thankyou-page ._header .logo img {
+            width: 100%;
+        }
+
+    .thankyou-page ._header h1 {
+        font-size: 65px;
+        font-weight: 800;
+        color: white;
+        margin: 0;
+    }
+
+.thankyou-page ._body {
+    margin: -70px 0 30px;
+}
+
+    .thankyou-page ._body ._box {
+        margin: auto;
+        max-width: 80%;
+        padding: 50px;
+        background: white;
+        border-radius: 3px;
+        box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+        -moz-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+        -webkit-box-shadow: 0 0 35px rgba(10, 10, 10,0.12);
+    }
+
+        .thankyou-page ._body ._box h2 {
+            font-size: 32px;
+            font-weight: 600;
+            color: #4ab74a;
+        }
+
+.thankyou-page ._footer {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+    .thankyou-page ._footer .btn {
+        background: #4ab74a;
+        color: white;
+        border: 0;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: 0;
+        letter-spacing: 0.8px;
+        padding: 20px 33px;
+        text-transform: uppercase;
+    }
+
+
+
+
+
+    .inputGroup {
+        background-color: #fff;
+        display: block;
+        margin: 10px 0;
+        position: relative;
+      }
+      .inputGroup label {
+        padding: 10px 9px 10px 45px;
+        width: 100%;
+        display: block;
+        text-align: left;
+        color: #3c454c;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: color 200ms ease-in;
+        overflow: hidden;
+        border: 2px solid #e4e4e4;
+      }
+      .inputGroup label:before {
+        width: 100%;
+        height: 10px;
+        border-radius: 50%;
+        content: "";
+        background-color: #63ebbd;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale3d(1, 1, 1);
+        transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0;
+        z-index: -1;
+      }
+      .inputGroup label:after {
+        width: 32px;
+        height: 32px;
+        content: "";
+        border: 2px solid #d1d7dc;
+        background-color: #fff;
+        background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        background-position: 2px 3px;
+        z-index: 2;
+        position: absolute;
+        left: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: all 200ms ease-in;
+      }
+
+      input[type="radio"] + label::after {
+          border-radius: 50%;
+      }
+
+      .inputGroup input:checked ~ label {
+        color: #fff;
+      }
+      .inputGroup input:checked ~ label:before {
+        transform: translate(-50%, -50%) scale3d(56, 56, 1);
+        opacity: 1;
+      }
+      .inputGroup input:checked ~ label:after {
+        background-color: #54e0c7;
+        border-color: #54e0c7;
+      }
+      .inputGroup input {
+        width: 32px;
+        height: 32px;
+        order: 1;
+        z-index: 2;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        visibility: hidden;
+      }
+      
+      .form {
+        padding: 0 16px;
+        max-width: 550px;
+        margin: 50px auto;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 36px;
+      }
+      
+      

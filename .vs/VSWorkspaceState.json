@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Views\\Shared"
+    "\\wwwroot\\assets",
+    "\\wwwroot\\assets\\css",
+    "\\wwwroot\\assets\\css\\shortcodes"
   ],
   "PreviewInSolutionExplorer": false
 }

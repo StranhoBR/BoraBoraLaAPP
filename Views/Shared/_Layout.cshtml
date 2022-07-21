@@ -3,53 +3,121 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BoraBoraLa</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/BoraBoraLa.styles.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - XLuminous</title>
 
-    <!-- Link folha de estilos para ressetar todos os estilos -->
-    <link rel="stylesheet" type="text/css" href="~/assets/css/resset.css">
-    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="@Html.Raw("//cdn.jsdelivr.net/npm/@sweetalert2/theme-bootstrap-4@5.0.8/bootstrap-4.min.css")" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css?v=1.0.0" />
     <link rel="stylesheet" type="text/css" href="~/assets/css/typography.css">
-    
+    <link rel="stylesheet" type="text/css" href="~/assets/vendors/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link href="@Html.Raw("https://fonts.googleapis.com/css?family=Fira+Sans") rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/shortcodes/icon-box.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/shortcodes/button.css">
+    <link rel="stylesheet" type="text/css" href="~/assets/css/style.css">
+    <link rel="stylesheet" href="~/css/reset.min.css" />
+
+
 </head>
 <body>
+
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3">
+        <!--- Navbar --->
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-top ps-sm-4" asp-area="" asp-controller="Home" asp-action="Index">BoraBoraLa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+
+
+                <a class="navbar-brand text-white logo" href="#"><i class="fa fa-graduation-cap fa-lg"></i>XLuminous</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                    <i class="fa fa-bars fa-fw mr-1 text-white"></i>
                 </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1  menu">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Principal</a>
+
+
+
+                <div class="collapse navbar-collapse" id="nvbCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="" asp-action="Index"><i class="fa fa-home fa-fw mr-1"></i>Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacidade</a>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="" asp-action="QuemSomos"><i class="fa fa-th-list fa-fw mr-1"></i>A Empresa</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="BuscaProdutos"><i class="fa fa-university fa-fw mr-1"></i>Simulados</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Cursos"><i class="fa fa-book fa-fw mr-1"></i>Cursos</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Formacao"><i class="fa fa-file-text fa-fw mr-1"></i>Formação</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Carrinho"><i class="fa fa-cart-plus fa-fw mr-1"></i>Carrinho</a> @*<span class="badge badge-light">4</span></a>*@
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+     </header>
 
-    <footer class="border-top footer text-muted bg-dark">
-        <div class="container text-white">
-            &copy; 2022 - BoraBoraLa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+
+
+    <main role="main" class="pb-3">
+        <div class="container">
+            @RenderBody()
         </div>
+    </main>
+
+
+    <!--- Footer --->
+    <footer>
+<!--- Navbar --->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+
+                <a class="navbar-brand text-white logo" href="#"><i class="fa fa-graduation-cap fa-lg"></i>XLuminous</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbCollapse" aria-controls="nvbCollapse">
+                    <i class="fa fa-bars fa-fw mr-1 text-white"></i>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse" id="nvbCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="" asp-action="Index"><i class="fa fa-home fa-fw mr-1"></i>Inicio</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="" asp-action="QuemSomos"><i class="fa fa-th-list fa-fw mr-1"></i>A Empresa</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="BuscaProdutos"><i class="fa fa-university fa-fw mr-1"></i>Simulados</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Cursos"><i class="fa fa-book fa-fw mr-1"></i>Cursos</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Formacao"><i class="fa fa-file-text fa-fw mr-1"></i>Formação</a>
+                        </li>
+                        <li class="nav-item pl-1">
+                            <a class="nav-link" asp-area="" asp-controller="Pedido" asp-action="Carrinho"><i class="fa fa-cart-plus fa-fw mr-1"></i>Carrinho</a> @*<span class="badge badge-light">4</span></a>*@
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="~/js/ajaxhelpers.js"></script>
+    <script src="~/js/modals.js"></script>
+    <script src="~/js/carrinho.js"></script>
+    <script src="~/js/header-9.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
